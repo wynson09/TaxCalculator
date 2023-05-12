@@ -14,4 +14,4 @@ state variable is a valid number. If it isn’t, update the “errorMessage” s
 to an error message saying, “Please input numbers only.” Make it red and display it
 below the input field.
 
-Live server link: wn-taxcalculator.pages.dev
+Live server link: https://wn-taxcalculator.pages.dev/
