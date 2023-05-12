@@ -16,8 +16,10 @@ function TaxCalculator() {
 
   const handleCalculateTax = () => {
     if (!regex.test(income)) {
+      setResult("0");
       setErrorMsg("Please input numbers only!");
     } else if (income.length > 7) {
+      setResult("0");
       setErrorMsg("Maximum of 7 digits only!");
     } else {
       setErrorMsg("");
@@ -25,18 +27,20 @@ function TaxCalculator() {
     }
   };
   return (
-    <main>
-      <section>
+    <main className="body">
+      <section className="container">
         <div>
-          <h2>Tax Calculator</h2>
-          <h4>Tax Result: {result}</h4>
+          <h2 className="title">Tax Calculator</h2>
+          <h4 className="result">Tax Result: {result}</h4>
         </div>
-        <div>
+        <div className="input-container">
           <label>Income:</label>
-          <input type="text" onChange={handleIncome} />
+          <input type="text" onChange={handleIncome} required />
           <TaxRateSelector setTaxRate={setTaxRate} />
         </div>
-        <button onClick={handleCalculateTax}>Calculate my Income Tax</button>
+        <button className="button" onClick={handleCalculateTax}>
+          Calculate my Income Tax
+        </button>
         <div>
           <p>{errorMsg}</p>
         </div>

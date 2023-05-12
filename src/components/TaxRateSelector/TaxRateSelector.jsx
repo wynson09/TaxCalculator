@@ -5,9 +5,9 @@ function TaxRateSelector({ setTaxRate }) {
     setTaxRate(event.target.value);
   };
   return (
-    <div>
-      <label htmlFor="dropdown">Tax rate:</label>
-      <select id="dropdown" onChange={handleChange}>
+    <div className="taxRate">
+      <label>Tax rate:</label>
+      <select onChange={handleChange}>
         <option value="0.1">10%</option>
         <option value="0.15">15%</option>
         <option value="0.2">20%</option>

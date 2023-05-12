@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #121111;
+  background: white;
+  box-shadow: 5px 5px #121111;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 15px;
+}
+p {
+  color: red;
+}
+
+/* =============== INPUT =============== */
+label {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 30px;
+}
+input {
+  padding: 5px;
+  width: 88%;
+  font-size: 18px;
+}
+select {
+  padding: 7px;
+  width: 92%;
+  font-size: 18px;
+}
+.taxRate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+/* =========== BUTTON ========== */
+.button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid #121111;
+  background: white;
+  box-shadow: 3px 3px #121111;
+  margin: 30px 0 20px 0;
+  transition: all 0.2s ease-in-out;
+}
+.button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+/* ============ Title ======= */
+.title {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.result {
+  font-size: 20px;
+  font-weight: 500;
+}
